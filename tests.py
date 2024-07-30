@@ -12,6 +12,9 @@ class TestCase(unittest.TestCase):
     def test3(self):
         self.assertFalse(check_pwd("boba@123"))  # contain 1 lowercase characters
 
+    def test4(self):
+        self.assertFalse(check_pwd("Boba@123"))  # contain everything valid
+
 if __name__ == '__main__':
     unittest.main()
 
